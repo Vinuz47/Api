@@ -10,6 +10,9 @@ const client = new MongoClient(uri);
 //app.use(log); //middleware usings
 // app.use('/api/users',user);  
 // app.use('/api/students',student);
+app.get('/',(req,res)=>{
+    res.send({msg:'hello guys user Get'});
+})
 
 app.get('/usersget',async (req,res)=>{
     try{
