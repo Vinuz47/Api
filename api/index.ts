@@ -1,8 +1,8 @@
 
 const express = require('express');
 const app = express();
-const  user = require('./routers/users');
-const  student = require('./routers/students');
+const  user = require('../routers/users');
+const  student = require('../routers/students');
 
 //app.use(log); //middleware usings
 app.use('/api/users',user);  
