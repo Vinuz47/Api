@@ -55,10 +55,10 @@ async function findAllDetails() {
 }
 
 //midleware creation
-function log(req,res,next){
-    console.log('middleware');
-    next();
-}
+// function log(req,res,next){
+//     console.log('middleware');
+//     next();
+// }
 
 
 console.log(process.env.PORT);
