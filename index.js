@@ -14,7 +14,7 @@ const client = new MongoClient(uri);
 //     res.send({msg:'hello guys user Get'});
 // })
 
-app.get('/',async (req,res)=>{
+app.get('/users',async (req,res)=>{
     try{
         // Call findAllDetails to get the data
         const jsondata = await findAllDetails();
@@ -27,6 +27,10 @@ app.get('/',async (req,res)=>{
     }
     
 });
+
+app.get('/hello',(req,res)=>{
+    res.send({msg:'hello guys user POST'});
+})
 
 app.post('/userspost',(req,res)=>{
     res.send({msg:'hello guys user POST'});
