@@ -36,6 +36,49 @@ app.post('/userspost',(req,res)=>{
     res.send({msg:'hello guys user POST'});
 })
 
+app.get('/hi',(req,res)=>{
+    res.send({
+        data:[
+            {
+                "title": "Food Waste",
+                "shortDescription": "bla bla bla...",
+                "longDescription": "ya ya ya ya ya ya ya ya....",
+                "category": "Food",
+                "publishDate": "20-07-2018",
+                "imgUrl": "image path..."
+        
+            },
+            {
+                "title": "Food Waste",
+                "shortDescription": "bla bla bla...",
+                "longDescription": "ya ya ya ya ya ya ya ya....",
+                "category": "Food",
+                "publishDate": "20-07-2018",
+                "imgUrl": "image path..."
+        
+            },
+            {
+                "title": "Food Waste",
+                "shortDescription": "bla bla bla...",
+                "longDescription": "ya ya ya ya ya ya ya ya....",
+                "category": "Food",
+                "publishDate": "20-07-2018",
+                "imgUrl": "image path..."
+        
+            },
+            {
+                "title": "Food Waste",
+                "shortDescription": "bla bla bla...",
+                "longDescription": "ya ya ya ya ya ya ya ya....",
+                "category": "Food",
+                "publishDate": "20-07-2018",
+                "imgUrl": "image path..."
+        
+            }  
+        ]        
+    });
+})
+
 async function findAllDetails() {
     try{
         const database = client.db('mydb');
